@@ -74,7 +74,7 @@ def arctanktan_modified(x, k):
     
 # Find the precession angle as a function of time.
 def g(t):
-    k = math.sqrt((a+c)/(a-c))
+    k = math.sqrt((a-c)/(a+c))
     return H * (T/(math.pi*a*b))*arctanktan_modified(f(t)/2, k)
 
 # Find X coordinate of the path as function of time when doing precession.
